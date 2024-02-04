@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./public/assets/css/main.css" />
   </head>
   <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-rose-500">
+    <div>
+      <h2 class="text-center mt-8">Send your courier fast</h2>
+    </div>
     <div
-      class="p-16 space-y-5 max-w-xl mx-auto mt-16 bg-[rgba(255,255,255,0.1)] rounded-lg"
+      class="p-16 space-y-5 max-w-xl mx-auto mt-14 bg-[rgba(255,255,255,0.1)] rounded-lg"
     >
       <div class="flex space-x-2">
         <input
           type="text"
           placeholder="Name"
-          class="h-7 rounded-md sm:w-60 w-64 px-2 outline-none"
+          class="h-7 rounded-md  px-2 outline-none w-full"
         />
         <input
           type="number"
           placeholder="Phone"
-          class="sm:w-60 w-64 rounded-md px-2 outline-none"
+          class=" rounded-md px-2 outline-none w-full"
         />
       </div>
       <div>
@@ -45,8 +48,8 @@
         </button>
       </div>
     </div>
-    <div >
-      <table class="table table-fixed border w-full">
+    <div class="mx-auto max-w-xl">
+      <table class="table table-fixed border w-full text-center">
         <thead>
           <tr>
             <th class="px-2 py-2 border">Customer Name</th>
@@ -55,12 +58,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="font-semibold">
             <td class="px-2 py-2 border">GOPAL</td>
-            <td class="px-2 py-2 border">00:00:0000 00:00</td>
+            <td class="px-2 py-2 border">20:12:2024 03:00 pm</td>
             <td class="px-2 py-2 border">Anthiyur</td>
-            <td class=""><button class="bg-red-600 text-white p-2 rounded-md">Delete</button></td>
-          </tr>
+            <td><button class="bg-red-600 mb-8 text-white p-2 font-bold rounded-sm">Delete</button></td>
+            </tr>
         </tbody>
       </table>
     </div>
