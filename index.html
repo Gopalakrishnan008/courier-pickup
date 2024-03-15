@@ -8,47 +8,59 @@
   </head>
   <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-rose-500">
     <div>
-      <h2 class="text-center mt-8">Send your courier fast</h2>
+      <h2 class="text-center text-xl font-bold mt-8">Send your courier fast</h2>
     </div>
-    <div
+    <form id="courierForm"
       class="p-16 space-y-5 max-w-xl mx-auto mt-14 bg-[rgba(255,255,255,0.1)] rounded-lg"
     >
       <div class="flex space-x-2">
         <input
+          id="nameFiled"
           type="text"
           placeholder="Name"
+          title="Name"
+          name="name"
+          value="GOPAL"
           class="h-7 rounded-md  px-2 outline-none w-full"
         />
         <input
+        id="phoneFiled"
           type="number"
+          name="phone"
+          title="phone-no"
           placeholder="Phone"
           class=" rounded-md px-2 outline-none w-full"
         />
       </div>
       <div>
         <input
+        id="dateTimeField"
           type="datetime-local"
+          name="datetime-local"
+          title="datetime"
           class="w-full rounded-md px-2 outline-none"
         />
       </div>
       <div>
         <textarea
+        id="textareaField"
           name="address"
           placeholder="Enter your address..."
+          title="textarea"
           cols="43"
           rows="5"
           class="outline-none rounded-md px-3 w-full"
         ></textarea>
       </div>
       <div>
-        <button
+        <button id="formSubeteBtn"
           class="bg-indigo-600 font-semibold text-white p-2 w-full rounded-md"
         >
           Verify and Pikup
         </button>
       </div>
-    </div>
-    <div class="mx-auto max-w-xl">
+    </form>
+    <div class="mx-auto max-w-xl hidden">
       <table class="table table-fixed border w-full text-center">
         <thead>
           <tr>
@@ -67,5 +79,6 @@
         </tbody>
       </table>
     </div>
+    <script src="./public/assets/js/main.js"></script>
   </body>
 </html>
